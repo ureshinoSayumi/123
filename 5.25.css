@@ -1,0 +1,555 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none; 
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body a{
+    text-decoration:none;
+}
+
+
+body{
+    /* font-family: Microsoft JhengHei ; */
+    background: #f7f7f7;
+    font-family: monospace;
+}
+
+.header{
+    margin: auto;
+    width: 1024px;
+    height: 300px;
+    background: #424242;
+    /* background: #ffd366; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.headerBmi{
+    width: 117px;
+    height: 117px;
+}
+.headerCm{
+    margin-bottom: 20px;
+}
+.headerCmKg h2{
+    color: #ffd366;
+    margin-bottom: 5px;
+}
+.headerCmText{
+    width: 246px;
+    height: 40px;
+    background: #424242;
+    border: solid 2px #ffd366;
+    /* 外框圓弧 */
+    border-radius: 10px;
+    font-size: 20px;
+    color: #b1b1b1;
+
+}
+
+
+.headerEvent{
+    /* 水平垂直至中 */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    width: 120px;
+    height: 120px;
+    background: #ffd366;
+    /* 外框圓弧 */
+    border-radius: 100%;
+    color: #424242;
+    font-size: 25px;
+}
+.headerEvent:hover{
+    /* 外框陰影 */
+    box-shadow: 0px 0px 15px 0px #ffd366;
+}
+.headerEvent:active{
+    box-shadow: 0px 0px 0px 0px #ffd366;
+
+    background: #dea921;
+}
+
+
+/* 理想 */
+.headerEvent2{
+    width: 100px;
+    height: 100px;
+    border: solid 7px #ffd366;
+    /* 外框圓弧 */
+    border-radius: 100%;
+}
+.headerEvent2 h2{
+    color: #86D73e;
+    font-size: 20px;
+    /* 相對座標定位 */
+    position: relative;
+    top: -40px;
+    left: 120px;
+}
+.headerEvent2 h3{
+    color: #86D73e;
+    margin-top: 33px;
+    margin-left: 8px;
+    font-size: 30px;
+}
+.headerEvent2 p{
+    color: #86D73e;
+
+    padding-left: 40px;
+}
+.headerEvent2Img{
+    /* 水平垂直至中 */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    /* 相對座標定位 */
+    position: relative;
+    top: 0px;
+    left: 70px;
+
+    
+    background: #ffd366;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    border: solid 3px #424242;
+
+}
+/* 過輕 */
+.headerEvent3{
+    width: 100px;
+    height: 100px;
+    border: solid 7px #31BAF9;
+    /* 外框圓弧 */
+    border-radius: 100%;
+}
+.headerEvent3 h2{
+    color: #31BAF9;
+    font-size: 20px;
+    /* 相對座標定位 */
+    position: relative;
+    top: -40px;
+    left: 120px;
+}
+.headerEvent3 h3{
+    color: #31BAF9;
+    margin-top: 33px;
+    margin-left: 8px;
+    font-size: 30px;
+}
+.headerEvent3 p{
+    color: #31BAF9;
+
+    padding-left: 40px;
+}
+.headerEvent3Img{
+    /* 水平垂直至中 */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    /* 相對座標定位 */
+    position: relative;
+    top: 0px;
+    left: 70px;
+
+    
+    background: #31BAF9;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    border: solid 3px #424242;
+
+}
+/* 過重 */
+.headerEvent4{
+    width: 100px;
+    height: 100px;
+    border: solid 7px #FF982D;
+    /* 外框圓弧 */
+    border-radius: 100%;
+}
+.headerEvent4 h2{
+    color: #FF982D;
+    font-size: 20px;
+    /* 相對座標定位 */
+    position: relative;
+    top: -40px;
+    left: 120px;
+}
+.headerEvent4 h3{
+    color: #FF982D;
+    margin-top: 33px;
+    margin-left: 8px;
+    font-size: 30px;
+}
+.headerEvent4 p{
+    color: #FF982D;
+
+    padding-left: 40px;
+}
+.headerEvent4Img{
+    /* 水平垂直至中 */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    /* 相對座標定位 */
+    position: relative;
+    top: 0px;
+    left: 70px;
+
+    
+    background: #FF982D;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    border: solid 3px #424242;
+
+}
+/* 輕度肥胖 */
+.headerEvent5{
+    width: 100px;
+    height: 100px;
+    border: solid 7px #FF6C02;
+    /* 外框圓弧 */
+    border-radius: 100%;
+}
+.headerEvent5 h2{
+    color: #FF6C02;
+    font-size: 20px;
+    /* 相對座標定位 */
+    position: relative;
+    top: -40px;
+    left: 120px;
+}
+.headerEvent5 h3{
+    color: #FF6C02;
+    margin-top: 33px;
+    margin-left: 8px;
+    font-size: 30px;
+}
+.headerEvent5 p{
+    color: #FF6C02;
+
+    padding-left: 40px;
+}
+.headerEvent5Img{
+    /* 水平垂直至中 */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    /* 相對座標定位 */
+    position: relative;
+    top: 0px;
+    left: 70px;
+
+    
+    background: #FF6C02;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    border: solid 3px #424242;
+
+}
+/* 中度肥胖 */
+
+/* 重度肥胖 */
+.headerEvent6{
+    width: 100px;
+    height: 100px;
+    border: solid 7px #FF1200;
+    /* 外框圓弧 */
+    border-radius: 100%;
+}
+.headerEvent6 h2{
+    color: #FF1200;
+    font-size: 20px;
+    /* 相對座標定位 */
+    position: relative;
+    top: -40px;
+    left: 120px;
+}
+.headerEvent6 h3{
+    color: #FF1200;
+    margin-top: 33px;
+    margin-left: 8px;
+    font-size: 30px;
+}
+.headerEvent6 p{
+    color: #FF6C02;
+
+    padding-left: 40px;
+}
+.headerEvent6Img{
+    /* 水平垂直至中 */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+    /* 相對座標定位 */
+    position: relative;
+    top: 0px;
+    left: 70px;
+
+    
+    background: #FF1200;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    border: solid 3px #424242;
+
+}
+/* ---------------content---------------- */
+ul{
+    margin-top: 15px;
+}
+.title{
+    margin: auto;
+    text-align: center;
+    width: 1024px;
+    /* height: 300px; */
+    color: #4A4A4A ;
+    font-size: 20px;
+    /* background: #b1b1b1; */
+    background: #f5f5f5;
+    padding-top: 35px;
+    padding-bottom: 35px;
+
+}
+.content{
+    color: #4A4A4A;
+    margin: auto;
+    width: 1024px;
+    /* height: 300px; */
+    /* background: #f5f5f5; */
+    background: #f5f5f5;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center
+
+}
+
+.load3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 624px;
+    height: 62px;
+    border-left: 5px solid #86D73F ;
+    background: #FFFFFF;
+}
+.load3 li{
+    display: flex;
+    align-items: center;
+}
+.load3 p{
+    font-size: 11px;
+    /* padding-right: 7px; */
+}
+.load3 h3{
+    font-size: 18px;
+}
+.load3 h2{
+    width: 70px;
+    font-size: 15px;
+}
+
+/* 過輕 */
+.load3-1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 624px;
+    height: 62px;
+    border-left: 5px solid #31BAF9 ;
+    background: #FFFFFF;
+}
+.load3-1 li{
+    display: flex;
+    align-items: center;
+}
+.load3-1 p{
+    font-size: 11px;
+}
+.load3-1 h3{
+    font-size: 18px;
+}
+.load3-1 h2{
+    width: 70px;
+    font-size: 15px;
+}
+/* 過重 */
+.load3-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 624px;
+    height: 62px;
+    border-left: 5px solid #FF982D ;
+    background: #FFFFFF;
+}
+.load3-2 li{
+    display: flex;
+    align-items: center;
+}
+.load3-2 p{
+    font-size: 11px;
+}
+.load3-2 h3{
+    font-size: 18px;
+}
+.load3-2 h2{
+    width: 70px;
+    font-size: 15px;
+}
+/* 輕度肥胖 */
+.load3-3{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 624px;
+    height: 62px;
+    border-left: 5px solid #FF6C03 ;
+    background: #FFFFFF;
+}
+.load3-3 li{
+    display: flex;
+    align-items: center;
+}
+.load3-3 p{
+    font-size: 11px;
+}
+.load3-3 h3{
+    
+    font-size: 18px;
+}
+.load3-3 h2{
+    width: 70px;
+    font-size: 15px;
+}
+/* 中度肥胖 */
+
+/* 重度肥胖 */
+.load3-5{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 624px;
+    height: 62px;
+    border-left: 5px solid #FF1200 ;
+    background: #FFFFFF;
+}
+.load3-5 li{
+    display: flex;
+    align-items: center;
+}
+.load3-5 p{
+    font-size: 11px;
+}
+.load3-5 h3{
+    font-size: 18px;
+}
+.load3-5 h2{
+    width: 70px;
+    font-size: 15px;
+}
+
+
+
+.End{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 1024px;
+    height: 90px;
+    background: #ffd366;
+    margin-top: 50px;
+
+}
+.End img{
+    width: 55px;
+    height: 55px;
+    /* color: #424242; */
+}
+.a{
+    margin: auto;
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+  
+}
+.Delete{
+    width: 150px;
+    height: 30px;
+    background: #ffd366;
+    color: #4a4a4a;
+    display: block;
+    text-align: center;
+    padding-top: 15px;
+    margin-top: 30px;
+    border-radius: 10px;
+
+}
+.Delete:hover{
+    box-shadow: 0px 0px 10px 0px #ffd366;
+
+}
+
+.Delete:active{
+    box-shadow: 0px 0px 0px 0px #ffd366;
+
+    background: #dea921;
+}
